@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trust — LDTT</title>
+  <meta name="description" content="What LDTT is and is not. Connectors only — not FAA, not aircraft or operator certification.">
+  <link rel="icon" href="assets/ldtt-favicon.jpg" type="image/jpeg">
+  <meta property="og:title" content="LDTT trust scope">
+  <meta property="og:description" content="Portable trust stamp for drone software connectors">
+  <meta property="og:image" content="https://ldttstamp.org/assets/ldtt-og-logo-led.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/ldtt-logo-header-wide.png" width="125" height="36" alt="LDTT">
+        <span class="brand-text">LDTT</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="observe.html">Observe</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="connectors.html">Connectors</a>
+        <a href="demo.html">Demo</a>
+        <a href="trust.html" aria-current="page">Trust</a>
+      </nav>
+      <div class="header-cta">
+        <div class="cta-block">
+          <a class="btn btn-primary btn-sm" href="observe.html">Get the free Observe stamp</a>
+          <span class="honesty-chip honesty-chip-header">Connectors only — not FAA</span>
+        </div>
+      </div>
+      <details class="nav-toggle mobile-nav-only">
+        <summary aria-label="Menu">Menu</summary>
+        <nav class="nav-panel" aria-label="Mobile">
+          <a href="observe.html">Observe</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="connectors.html">Connectors</a>
+          <a href="demo.html">Demo</a>
+          <a href="trust.html" aria-current="page">Trust</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="page-hero">
+      <h1>Trust</h1>
+      <p class="lede">What LDTT is — and what it is not.</p>
+      <div class="stamp-wrap" style="align-items:flex-start;margin-top:0.75rem;">
+        <img class="logo-thumb" src="assets/ldtt-logo-header-wide.png" width="125" height="36" alt="LDTT logo">
+        <img class="stamp-badge" src="assets/ldtt-stamp-badge-72.png" width="72" height="72" alt="LDTT Observe stamp">
+      </div>
+    </header>
+
+    <section class="section grid-3">
+      <div class="card">
+        <h2 class="section-title">Is</h2>
+        <p>Portable trust stamp for drone <strong>software connectors</strong> (tools/plugins that talk to a drone).</p>
+        <p>Observe = first trust level: declared scope, read-oriented limits, revocable. About the connector, not flight clearance.</p>
+      </div>
+      <div class="card">
+        <h2 class="section-title is-not">Is not</h2>
+        <ul class="bullets">
+          <li>Aircraft certification</li>
+          <li>Operator certification / licensing</li>
+          <li>Airworthiness</li>
+          <li>Flight safety / “safe to fly”</li>
+          <li>FAA or other regulatory claim</li>
+          <li>Fleet dashboard</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 class="section-title">Badge lockups</h2>
+        <p>Observe stamp · Declared read scope</p>
+        <p>Checked · Declared · Revocable</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What was checked (Observe)</h2>
+      <p>At Observe, the intent is: no malicious/write-heavy scope for that level, declared limits (what it may send/receive), and build/provenance details in order for that stamp record — so you have a clearer basis to run the connector. Exact controls live in the stamp spec.</p>
+      <p><strong>Revocable:</strong> Yes. LDTT is designed so a bad or outdated connector can be cut off with a signed revocation list.</p>
+      <div class="callout callout-warn">
+        <h3>Draft vs real issuance</h3>
+        <p>Treat current reference artifacts as draft / placeholder until real Issuer + trust-root signing is live. Prefer “checked against the Observe reference” over “certified.”</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Do not claim</h2>
+      <ol class="do-not">
+        <li>FAA approval, certification, or endorsement</li>
+        <li>Any other civil aviation authority approval</li>
+        <li>Aircraft certification or type design approval</li>
+        <li>Operator certification or licensing</li>
+        <li>Airworthiness</li>
+        <li>Flight safety certification or “safe to fly”</li>
+        <li>That LDTT replaces operational risk assessment, SOPs, or insurance requirements</li>
+        <li>That a stamped connector makes the vehicle or mission compliant</li>
+        <li>Military / weapons certification (out of scope entirely)</li>
+        <li>Guarantees about third-party software beyond the stamp’s stated connector controls</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Stamp + logo use</h2>
+      <p><strong>On-page:</strong> stamp with connector-scope context; logo in header/footer.</p>
+      <p><strong>Off-page (intended):</strong> display stamp alongside a connector product/docs; link to verify / this page / Spec. Do not imply LDTT certifies the airframe or operator; do not use in FAA filings.</p>
+      <p>Spec: Spec v0.2 r5.1 frozen · Repo: <a class="link-out" href="https://github.com/rockmed888-ship-it/ldtt" rel="noopener noreferrer" target="_blank">rockmed888-ship-it/ldtt</a></p>
+            <p><a class="btn btn-secondary" href="https://github.com/rockmed888-ship-it/ldtt" rel="noopener noreferrer" target="_blank">Read the stamp spec</a></p>
+    </section>
+
+    <section class="section">
+        <div class="cta-block">
+          <a class="btn btn-primary" href="observe.html">Get the free Observe stamp</a>
+          <span class="honesty-chip">Connectors only — not FAA</span>
+        </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/ldtt-logo-header-wide.png" width="97" height="28" alt="LDTT">
+      </div>
+      <p class="footer-disclaimer">LDTT stamps connectors only — not aircraft, pilots, or flight safety; no FAA or must-have-to-fly claims. <a href="trust.html">Full trust scope</a>.</p>
+      <div class="footer-links">
+        <a href="https://github.com/rockmed888-ship-it/ldtt" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="observe.html">Observe</a>
+        <a href="trust.html">Trust</a>
+        <a href="demo.html">Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
