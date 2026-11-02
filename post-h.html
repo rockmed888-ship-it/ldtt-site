@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Don't take our word for it. Check the stamp. — LDTT</title>
+  <meta name="description" content="How to check an LDTT Observe stamp yourself: level, build digest, signature, revoke list. Connectors only — not FAA.">
+  <link rel="canonical" href="https://ldttstamp.org/post-h.html">
+  <link rel="icon" href="assets/ldtt-favicon.jpg" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ldttstamp.org/post-h.html">
+  <meta property="og:title" content="Don't take our word for it. Check the stamp.">
+  <meta property="og:description" content="How to check an LDTT Observe stamp yourself: level, build digest, signature, revoke list. Connectors only — not FAA.">
+  <meta property="og:image" content="https://ldttstamp.org/assets/ldtt-og-post-c.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LDTT Observe stamp: Don't take our word for it. Check the stamp.. Connectors only, not FAA.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Don't take our word for it. Check the stamp.">
+  <meta name="twitter:description" content="How to check an LDTT Observe stamp yourself: level, build digest, signature, revoke list. Connectors only — not FAA.">
+  <meta name="twitter:image" content="https://ldttstamp.org/assets/ldtt-og-post-c.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/ldtt-logo-header-wide.png" width="125" height="36" alt="LDTT">
+        <span class="brand-text">LDTT</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="observe.html">Observe</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="connectors.html">Connectors</a>
+        <a href="demo.html">Demo</a>
+        <a href="trust.html">Trust</a>
+      </nav>
+      <div class="header-cta">
+        <div class="cta-block">
+          <a class="btn btn-primary btn-sm" href="observe.html">Get the free Observe stamp</a>
+          <span class="honesty-chip honesty-chip-header">Connectors only — not FAA</span>
+        </div>
+      </div>
+      <details class="nav-toggle mobile-nav-only">
+        <summary aria-label="Menu">Menu</summary>
+        <nav class="nav-panel" aria-label="Mobile">
+          <a href="observe.html">Observe</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="connectors.html">Connectors</a>
+          <a href="demo.html">Demo</a>
+          <a href="trust.html">Trust</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="section">
+      <h1>Don't take our word for it. Check the stamp.</h1>
+      <p><strong>A free Observe stamp that shows this connector was checked — so you can run it with clearer eyes.</strong></p>
+      <p>A trust stamp is only worth something if you can check it without asking us. Here's what checking an LDTT stamp looks like:</p>
+      <ol>
+        <li><strong>Open the stamp file</strong> that ships with the connector. It's small and readable. <a class="link-out" href="https://github.com/rockmed888-ship-it/ldtt/blob/bb65b33/stamps/org.ldtt.ref-mav-observer/0.1.0.json" rel="noopener noreferrer" target="_blank">Example stamp file</a>.</li>
+        <li><strong>Read the level.</strong> Observe means telemetry in, nothing out to the aircraft.</li>
+        <li><strong>Match the build.</strong> Recompute the digest of the connector you have. If it doesn't match the stamp, the stamp doesn't cover it.</li>
+        <li><strong>Check the signature.</strong> The stamp is keyless-signed by our public GitHub workflow and logged in a public transparency log.</li>
+        <li><strong>Check the revoke list.</strong> It's signed and refreshed automatically. If the stamp is on it, stop.</li>
+      </ol>
+      <p>The fields and rules behind each step are in the <a class="link-out" href="https://github.com/rockmed888-ship-it/ldtt/blob/main/LDTT-Stamp-Spec-v0.2.md" rel="noopener noreferrer" target="_blank">Stamp Spec v0.2</a> and the <a class="link-out" href="https://github.com/rockmed888-ship-it/ldtt/blob/main/schema/ldtt.schema.json" rel="noopener noreferrer" target="_blank">stamp schema</a>.</p>
+      <p>If any step fails, treat the connector as unstamped. That's the whole point: the stamp works the same way no matter who's checking or which platform you're on.</p>
+      <p>Our first stamp also lists its own weak spots, so you know what isn't proven yet. <a href="post-c.html">Read that post</a>.</p>
+      <p>LDTT doesn't endorse any project and isn't a flight clearance.</p>
+      <div class="cta-block">
+        <a class="btn btn-primary" href="demo.html">See the 2-minute phone demo</a>
+        <span class="honesty-chip">Connectors only — not FAA</span>
+      </div>
+      <p><a href="observe.html">Get the free Observe stamp →</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/ldtt-logo-header-wide.png" width="97" height="28" alt="LDTT">
+      </div>
+      <p class="footer-disclaimer">LDTT stamps connectors only — not aircraft, pilots, or flight safety; no FAA or must-have-to-fly claims. <a href="trust.html">Full trust scope</a>.</p>
+      <div class="footer-links">
+        <a href="https://github.com/rockmed888-ship-it/ldtt" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="observe.html">Observe</a>
+        <a href="trust.html">Trust</a>
+        <a href="demo.html">Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
