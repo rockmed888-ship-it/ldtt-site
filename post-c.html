@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our first trust stamp lists its own weak spots — LDTT</title>
+  <meta name="description" content="A free Observe stamp for a drone software connector that says what passed and what isn't proven yet. Connectors only — not FAA.">
+  <link rel="canonical" href="https://ldttstamp.org/post-c.html">
+  <link rel="icon" href="assets/ldtt-favicon.jpg" type="image/jpeg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ldttstamp.org/post-c.html">
+  <meta property="og:title" content="Our first trust stamp lists its own weak spots">
+  <meta property="og:description" content="Free Observe stamp for drone software connectors. Checked, declared, revocable — and honest about the gaps.">
+  <meta property="og:image" content="https://ldttstamp.org/assets/ldtt-og-post-c.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LDTT Observe stamp: Our first trust stamp lists its own weak spots. Connectors only, not FAA.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our first trust stamp lists its own weak spots">
+  <meta name="twitter:description" content="Free Observe stamp for drone software connectors. Connectors only — not FAA.">
+  <meta name="twitter:image" content="https://ldttstamp.org/assets/ldtt-og-post-c.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/ldtt-logo-header-wide.png" width="125" height="36" alt="LDTT">
+        <span class="brand-text">LDTT</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="observe.html">Observe</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="connectors.html">Connectors</a>
+        <a href="demo.html">Demo</a>
+        <a href="trust.html">Trust</a>
+      </nav>
+      <div class="header-cta">
+        <div class="cta-block">
+          <a class="btn btn-primary btn-sm" href="observe.html">Get the free Observe stamp</a>
+          <span class="honesty-chip honesty-chip-header">Connectors only — not FAA</span>
+        </div>
+      </div>
+      <details class="nav-toggle mobile-nav-only">
+        <summary aria-label="Menu">Menu</summary>
+        <nav class="nav-panel" aria-label="Mobile">
+          <a href="observe.html">Observe</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="connectors.html">Connectors</a>
+          <a href="demo.html">Demo</a>
+          <a href="trust.html">Trust</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="section">
+      <h1>Our first trust stamp lists its own weak spots</h1>
+      <p><strong>A free Observe stamp that shows this connector was checked — so you can run it with clearer eyes.</strong></p>
+      <p>A trust stamp should tell you what passed and what isn't proven yet. Ours does both, in the file itself.</p>
+      <p>Linked Drone Tool Trust (LDTT) has published its first Observe stamp. It covers our own reference connector, a small tool that only reads drone telemetry.</p>
+      <h2>What the stamp says</h2>
+      <ul>
+        <li><strong>Level: Observe.</strong> It reads telemetry only, with no motion commands in scope and no internet egress.</li>
+        <li><strong>Build-bound.</strong> It names one connector, one version, and one build digest. The build is reproducible and was rebuilt in CI with a matching digest.</li>
+        <li><strong>Provenance attached.</strong> GitHub SLSA v1 provenance comes from our public CI workflow.</li>
+        <li><strong>Signed in public.</strong> The stamp is keyless-signed by our public GitHub workflow and logged in a public transparency log.</li>
+        <li><strong>Revocable.</strong> A signed revoke list that refreshes automatically can switch it off.</li>
+      </ul>
+      <h2>What the stamp admits</h2>
+      <ul>
+        <li>There's no hosted release asset yet. You get the build from the repo, not a download page.</li>
+        <li>MAVLink message signing is off for this connector. That's allowed at Observe, and the stamp says so.</li>
+      </ul>
+      <p><strong>Checked, declared, revocable, and honest about the gaps.</strong></p>
+      <h2>Why put weak spots in the stamp?</h2>
+      <p>The person about to run a drone connector deserves the whole picture, not just the green parts. Our first version of this stamp said the build was local. When CI closed that gap, we re-signed the stamp and updated the note. Every gap we close works the same way.</p>
+      <p>LDTT covers the connector, not the flight. It isn't a flight clearance, it isn't required to fly, and it makes no regulatory claims.</p>
+      <div class="cta-block">
+        <a class="btn btn-primary" href="demo.html">See the 2-minute phone demo</a>
+        <span class="honesty-chip">Connectors only — not FAA</span>
+      </div>
+      <p><a href="observe.html">Get the free Observe stamp →</a> · <a class="link-out" href="https://github.com/rockmed888-ship-it/ldtt/blob/bb65b33/stamps/org.ldtt.ref-mav-observer/0.1.0.json" rel="noopener noreferrer" target="_blank">See the stamp file</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/ldtt-logo-header-wide.png" width="97" height="28" alt="LDTT">
+      </div>
+      <p class="footer-disclaimer">LDTT stamps connectors only — not aircraft, pilots, or flight safety; no FAA or must-have-to-fly claims. <a href="trust.html">Full trust scope</a>.</p>
+      <div class="footer-links">
+        <a href="https://github.com/rockmed888-ship-it/ldtt" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="observe.html">Observe</a>
+        <a href="trust.html">Trust</a>
+        <a href="demo.html">Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
